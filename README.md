@@ -1,37 +1,30 @@
-# leetcode_hot100
+# LeetCode 刷题笔记
+> 🔥 坚持刷题，夯实数据结构与算法基础，提升编程思维与解题能力
+> 📂 个人刷题仓库，记录 LeetCode 热题100 / 经典题 / 面试高频题
 
-#### 介绍
-leetcode_hoot100
+## 📋 仓库说明
+本仓库用于**系统记录 LeetCode 刷题过程**，包含题目思路、代码实现、复杂度分析、易错点总结，方便复习复盘，适配面试准备与算法提升。
 
-#### 软件架构
-软件架构说明
+- 刷题范围：LeetCode Hot 100、面试高频题、经典算法题
+- 语言：主要使用 **Java**（可根据需求补充 Python/C++）
+- 结构：按**题型分类**，一题一文件，注释清晰
+- 目标：吃透思路，举一反三，不盲目刷题
 
+## ✅ 刷题进度统计
+- 总题数：`000` 题
+- 简单：`000` 题
+- 中等：`000` 题
+- 困难：`000` 题
 
-#### 安装教程
+> 持续更新中...
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+## 📌 个人说明
+- 刷题目的：**备战面试 + 提升算法能力**
+- 刷题平台：[LeetCode 中国](https://leetcode.cn/)
+- 仓库地址：https://github.com/m12305/leetcode
 
-#### 使用说明
+---
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+💪 **每日一题，积少成多，量变到质变**
 
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+---
