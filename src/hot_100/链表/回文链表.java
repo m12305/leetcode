@@ -1,18 +1,20 @@
-package hot_100;
+package hot_100.链表;
+
+import hot_100.ListNode;
 
 public class 回文链表 {
 
-    public boolean isPalindrome1(ListNode head) {
+    public boolean isPalindrome1(hot_100.ListNode head) {
         if (head==null||head.next==null){return true;}
 
-        ListNode cur = head;
-        ListNode fast = head;
+        hot_100.ListNode cur = head;
+        hot_100.ListNode fast = head;
         while(fast.next!=null&&fast.next.next!=null){
             cur = cur.next;
             fast = fast.next.next;
         }
 
-        ListNode newhead = reverseList(cur.next);
+        hot_100.ListNode newhead = reverseList(cur.next);
         cur = head;
 
         while (newhead!=null){
@@ -28,14 +30,14 @@ public class 回文链表 {
     }
 
 
-    public boolean isPalindrome(ListNode head) {
-        ListNode cur=head;
+    public boolean isPalindrome(hot_100.ListNode head) {
+        hot_100.ListNode cur=head;
         int size =0;
         while (cur!=null){
             size++;
             cur=cur.next;
         }
-        ListNode fast=head;
+        hot_100.ListNode fast=head;
         for (int i = 0; i <size/2; i++) {
             fast=fast.next;
         }
@@ -50,9 +52,9 @@ public class 回文链表 {
 
 
     //反转链表
-    public ListNode reverseList(ListNode head) {
-        ListNode temp=null;
-        ListNode cur=head;
+    public hot_100.ListNode reverseList(hot_100.ListNode head) {
+        hot_100.ListNode temp=null;
+        hot_100.ListNode cur=head;
         while (cur!=null){
             ListNode next=cur.next;
             cur.next=temp;

@@ -1,4 +1,6 @@
-package hot_100;
+package hot_100.链表;
+
+import hot_100.ListNode;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -6,12 +8,12 @@ import java.util.HashSet;
 public class 环形链表2 {
 
     //用哈希set，先把环形链表的节点都存到set里，再从头遍历链表，如果set包含，那这个节点就是环形的开始
-    public ListNode detectCycle1(ListNode head) {
+    public hot_100.ListNode detectCycle1(hot_100.ListNode head) {
         if (head==null||head.next==null){return null;}
-        ListNode fast=new ListNode();
-        ListNode slow=new ListNode();
-        ListNode cur=head;
-        HashSet<ListNode> hashSet = new HashSet<>();
+        hot_100.ListNode fast=new hot_100.ListNode();
+        hot_100.ListNode slow=new hot_100.ListNode();
+        hot_100.ListNode cur=head;
+        HashSet<hot_100.ListNode> hashSet = new HashSet<>();
 
         fast=slow=head;
         while(slow!=null&&fast!=null){
@@ -38,10 +40,10 @@ public class 环形链表2 {
     }
 
     //使用哈希map
-    public ListNode detectCycle(ListNode head) {
-        ListNode pre = null;
-        ListNode cur = head;
-        HashMap<ListNode,ListNode> map = new HashMap<>();
+    public hot_100.ListNode detectCycle(hot_100.ListNode head) {
+        hot_100.ListNode pre = null;
+        hot_100.ListNode cur = head;
+        HashMap<hot_100.ListNode, ListNode> map = new HashMap<>();
         while(cur!=null){
             if (!map.containsKey(cur)){
                 map.put(cur,pre);

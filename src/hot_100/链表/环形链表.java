@@ -1,12 +1,14 @@
-package hot_100;
+package hot_100.链表;
+
+import hot_100.ListNode;
 
 public class 环形链表 {
 
 
     //双指针
-    public boolean hasCycle(ListNode head) {
+    public boolean hasCycle(hot_100.ListNode head) {
         if (head==null||head.next==null){return false;}
-        ListNode left = head;
+        hot_100.ListNode left = head;
         ListNode right = head;
         while (right!=null&&right.next!=null){
             left = left.next;
