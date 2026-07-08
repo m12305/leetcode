@@ -1,7 +1,5 @@
 package CodeEveryday;
 
-import com.sun.org.apache.regexp.internal.RE;
-
 import java.util.*;
 
 public class 可被三整除的最大和 {
