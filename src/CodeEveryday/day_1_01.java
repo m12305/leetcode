@@ -2,6 +2,8 @@ package CodeEveryday;
 
 import java.util.Scanner;
 
+//day_1_01: https://www.nowcoder.com/practice/179d9754eeaf48a1b9a49dc1d438525a
+
 public class day_1_01 {
 
     public static void main(String[] args) {
