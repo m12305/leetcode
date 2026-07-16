@@ -10,30 +10,30 @@ public class day_7_03 {
         int n = in.nextInt();
         int[][] arr = new int[n][6];
 
-        while(in.hasNext()){
-            for(int i = 0 ;i<n;i++){
-                for(int j = 0;j<6;j++){
+        while (in.hasNext()) {
+            for (int i = 0 ; i < n; i++) {
+                for (int j = 0; j < 6; j++) {
                     arr[i][j] = in.nextInt();
                 }
             }
         }
 
-        for(int i = 0 ;i<n;i++){
+        for (int i = 0 ; i < n; i++) {
             func(arr[i]);
         }
     }
 
-    public static void func(int[] arr){
-        int a,b,c;
+    public static void func(int[] arr) {
+        int a, b, c;
 
-        for(int i=0;i<arr.length-1;i++){
+        for (int i = 0; i < arr.length - 2; i++) {
             a = i;
-            for(int j = i+1;j<arr.length;j++){
+            for (int j = i + 1; j < arr.length -1 ; j++) {
                 b = j;
-                for(int k = 0;k<arr.length;k++){
-                    if(k!=a && k!=b && isTri(arr[a],arr[b],arr[k])){
-                        c=k;
-                        if(func(a,b,c,arr)){
+                for (int k = j + 1; k < arr.length; k++) {
+                    c = k;
+                    if(isTri(arr[a],arr[b],arr[c])){
+                        if (func(a, b, c, arr)) {
                             System.out.println("Yes");
                             return;
                         }
@@ -44,16 +44,20 @@ public class day_7_03 {
         System.out.println("No");
     }
 
-    public static boolean func(int a,int b,int c,int[] arr){
+    public static boolean func(int a, int b, int c, int[] arr) {
         ArrayList<Integer> temp = new ArrayList<Integer>();
-        for(int i = 0;i<arr.length;i++){
-            if(i!=a &&i!=b && i!=c){temp.add(i);}
+        for (int i = 0; i < arr.length; i++) {
+            if (i != a && i != b && i != c) {
+                temp.add(arr[i]);
+            }
         }
-        return isTri(temp.get(0),temp.get(1),temp.get(2));
+        return isTri(temp.get(0), temp.get(1), temp.get(2));
     }
 
-    public static boolean isTri(int a,int b,int c){
-        if(a+b>c && a+c>b && b+c>a){return true;}
+    public static boolean isTri(int a, int b, int c) {
+        if (a + b > c && a + c > b && b + c > a) {
+            return true;
+        }
         return false;
     }
 }
